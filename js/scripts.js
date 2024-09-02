@@ -7,6 +7,62 @@
 // Scripts
 // 
 
+function initializeTestimonialsCarousel() {
+    $(".testimonial-carousel").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1000,
+        margin: 25,
+        dots: false,
+        loop: true,
+        nav : true,
+        navText : [
+            '<i class="bi bi-chevron-left"></i>',
+            '<i class="bi bi-chevron-right"></i>'
+        ],
+        responsive: {
+            0:{
+                items:1
+            },
+            992:{
+                items:2
+            }
+        }
+    });
+}
+
+// Destroy and reinitialize the carousel on language change
+document.addEventListener('languageChanged', function () {
+    const carousel = $(".testimonial-carousel");
+
+    // Destroy the carousel
+    carousel.trigger('destroy.owl.carousel');
+    carousel.find('.owl-stage-outer').children().unwrap();
+    carousel.removeClass("owl-center owl-loaded owl-text-select-on");
+
+    // Update the content of all testimonial items
+    const selectedLanguage = localStorage.getItem('selectedLanguage');
+    const mainPageContent2 = {
+        "en": {
+            "recenzijaText1": "This is fantastic! We couldn't have imagined better! I believe we have the best apartment website in town by far! I am so grateful to Ilija and his professionalism. Thank you!",
+            "recenzijaText2": "Professional, dedicated, and innovative. Our new website is better than we ever could have imagined. Thank you for everything!",
+            "recenzijaText3": "They created a fantastic website for me! Modern, functional, and attractive design. Professionalism and creativity at the highest level. Highly recommended!"
+        },
+        "sr": {
+            "recenzijaText1": "Ovo je sjajno! Bolje nismo mogli ni da zamislimo! Mislim da imamo ubedljivo najbolji vebsajt za apartmane u gradu! Previše sam zahvalan Iliji i njegovoj profesionalnosti. Hvala mu.",
+            "recenzijaText2": "Profesionalni, predani i inovativni. Naš novi vebsajt je bolji nego što smo ikada mogli da zamislimo. Hvala na svemu!",
+            "recenzijaText3": "Napravili su mi fantastičan veb sajt! Moderan, funkcionalan i privlačan dizajn. Profesionalnost i kreativnost na najvišem nivou. Toplo preporučujem!"
+        }
+    };
+
+    // Update all testimonial texts
+    document.querySelectorAll('.testimonial-item').forEach((item, index) => {
+        item.querySelector('.recenzija-text').innerText = mainPageContent2[selectedLanguage][`recenzijaText${index + 1}`];
+    });
+
+    // Reinitialize the carousel
+    initializeTestimonialsCarousel();
+});
+
 window.addEventListener('DOMContentLoaded', event => {
 
      // Spinner
@@ -15,7 +71,7 @@ window.addEventListener('DOMContentLoaded', event => {
             if ($('#spinner').length > 0) {
                 $('#spinner').removeClass('show');
             }
-        }, 1);
+        }, 1500);
     };
     spinner();
 
@@ -48,10 +104,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
+
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
-        document.querySelectorAll('#navbarResponsive .nav-link')
+        document.querySelectorAll('#navbarResponsive .linkZatvaranjeNav')
     );
     responsiveNavItems.map(function (responsiveNavItem) {
         responsiveNavItem.addEventListener('click', () => {
@@ -72,31 +129,35 @@ window.addEventListener('DOMContentLoaded', event => {
     $(document).ready(function() {
         $('[data-toggle="counter-up"]').counterUp({
             delay: 10,
-            time: 2000
+            time: 2000,
+            formatter: function (n) {
+                return n + '%'; // Adds % sign in front of the number
+            }
         });
     });
 
      // Testimonials carousel
-     $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        margin: 25,
-        dots: false,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-chevron-left"></i>',
-            '<i class="bi bi-chevron-right"></i>'
-        ],
-        responsive: {
-            0:{
-                items:1
-            },
-            992:{
-                items:2
-            }
-        }
-    });
+    initializeTestimonialsCarousel();
+    //  $(".testimonial-carousel").owlCarousel({
+    //     autoplay: true,
+    //     smartSpeed: 1000,
+    //     margin: 25,
+    //     dots: false,
+    //     loop: true,
+    //     nav : true,
+    //     navText : [
+    //         '<i class="bi bi-chevron-left"></i>',
+    //         '<i class="bi bi-chevron-right"></i>'
+    //     ],
+    //     responsive: {
+    //         0:{
+    //             items:1
+    //         },
+    //         992:{
+    //             items:2
+    //         }
+    //     }
+    // });
 
 
     // Portfolio isotope and filter
@@ -112,6 +173,9 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+
 
 function randomizePosition(element) {
     const header = document.querySelector('.masthead');
@@ -143,11 +207,11 @@ window.addEventListener('load', function() {
         document.querySelector('.email-icon').classList.add('show');
 
         var phoneToast = new bootstrap.Toast(document.getElementById('phoneToast'), {
-            delay: 8000 
+            delay: 6000 
         });
         phoneToast.show();
 
         // var phoneToast = new bootstrap.Toast(document.getElementById('phoneToast'));
         // phoneToast.show();
-    }, 2500);
+    }, 6000);
 });

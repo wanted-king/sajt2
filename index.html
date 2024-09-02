@@ -37,13 +37,33 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     </head>
     <body id="page-top">
-         <!-- Spinner Start -->
-         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Webips</span>
+        
+        <!-- Spinner Start -->
+        <div id="spinner" class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-text">
+                <span class="spinner-letter">W</span>
+                <span class="spinner-letter">E</span>
+                <span class="spinner-letter">B</span>
+                <span class="spinner-letter">I</span>
+                <span class="spinner-letter">P</span>
+                <span class="spinner-letter">S</span>
             </div>
         </div>
         <!-- Spinner End -->
+
+         <!-- Spinner Start -->
+         <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">W</span>
+                <span class="sr-only">E</span>
+                <span class="sr-only">B</span>
+                <span class="sr-only">I</span>
+                <span class="sr-only">P</span>
+                <span class="sr-only">S</span>
+            </div>
+        </div> -->
+        <!-- Spinner End -->
+
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
@@ -58,11 +78,11 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#prednost" id="prednostText">Naše Prednosti</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#O_Nama" id="oNamaText">O Nama</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#usluge" id="uslugeText">Usluge</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projekti" id="projektiText">Projekti</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact" id="kontaktText">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link linkZatvaranjeNav" href="#prednost" id="prednostText">Naše Prednosti</a></li>
+                        <li class="nav-item"><a class="nav-link linkZatvaranjeNav" href="#O_Nama" id="oNamaText">O Nama</a></li>
+                        <li class="nav-item"><a class="nav-link linkZatvaranjeNav" href="#usluge" id="uslugeText">Usluge</a></li>
+                        <li class="nav-item"><a class="nav-link linkZatvaranjeNav" href="#projekti" id="projektiText">Projekti</a></li>
+                        <li class="nav-item"><a class="nav-link linkZatvaranjeNav" href="#contact" id="kontaktText">Kontakt</a></li>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="jezikText">Language</a>
                             <div class="dropdown-menu m-0">
@@ -83,7 +103,7 @@
             <div class="container animate__animated animate__slideInDown">
                 <div class="masthead-subheading" id="dobrodosliText">Dobrodošli!</div>
                 <div class="masthead-heading" id="naslovGlavniText">Kreiramo moderna & funkcionalna digitalna rešenja za Vaš biznis</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services" id="glavnoDugmeText">Digitalizujte Se!</a>
+                <a class="btn btn-primary btn-xl text-uppercase" href="https://www.instagram.com/webips.digital/?igsh=eHlyNzBxZHBmeDF2" id="glavnoDugmeText">Digitalizujte Se!</a>
             </div>
         </header>
 
@@ -107,7 +127,7 @@
                               </div>
                               
                             <h5 class="mb-3">E-commerce</h5>
-                            <p class="m-0">Nudimo kompletna rešenja za e-commerce, uključujući dizajn i razvoj kako biste lako prodavali svoje proizvode online.</p>
+                            <p class="m-0" id="NudimoText">Nudimo kompletna rešenja za e-commerce, uključujući dizajn i razvoj kako biste lako prodavali svoje proizvode online.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
@@ -125,8 +145,8 @@
                                 </svg>
                             </div>
                               
-                            <h5 class="mb-3">Android i iOS Aplikacije</h5>
-                            <p class="m-0">Razvijamo moderne i funkcionalne Android i iOS aplikacije koje zadovoljavaju sve potrebe vašeg poslovanja i korisnika.</p>
+                            <h5 class="mb-3" id="AplikacijeText">Android i iOS Aplikacije</h5>
+                            <p class="m-0" id="RazvijamoText">Razvijamo moderne i funkcionalne Android i iOS aplikacije koje zadovoljavaju sve potrebe vašeg poslovanja i korisnika.</p>
                         </div>
                     </div>
                     <div class="col-lg-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
@@ -146,9 +166,9 @@
                                 <path d="M14 6L16 8L14 10" fill="white" stroke="url(#gradient-icon)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                 <path d="M10 6L8 8L10 10" fill="white" stroke="url(#gradient-icon)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
-                            <h5 class="mb-3">Dizajn i Razvoj</h5>
+                            <h5 class="mb-3" id="DizajnRazvojText">Dizajn i Razvoj</h5>
                             <!-- <p class="m-0">Kreiramo moderne web sajtove koji funkcionalnošću i dizajnom odražavaju vaš brend.</p> , od početne ideje do završnog proizvoda.-->
-                            <p class="m-0">Kreiramo atraktivne i funkcionalne web sajtove koji se prilagođavaju vašim potrebama i odražavaju jedinstvenost vašeg brenda.</p>
+                            <p class="m-0" id="KreiramoText">Kreiramo atraktivne i funkcionalne web sajtove koji se prilagođavaju vašim potrebama i odražavaju jedinstvenost vašeg brenda.</p>
                         </div>
                     </div>
                 </div>
@@ -162,8 +182,8 @@
             <div class="container py-5 px-lg-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-8 text-center">
-                        <p class="section-title text-white justify-content-center"><span></span>Naša Prednost<span></span></p>
-                        <h1 class="text-center text-white mb-4">Zašto Izabrati Nas</h1>
+                        <p class="section-title text-white justify-content-center" id="NašaPrednostText"><span></span>Naša Prednost<span></span></p>
+                        <h1 class="text-center text-white mb-4" id="ZaštoText">Zašto Izabrati Nas</h1>
 
                         <div class="row g-3">
                             <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
@@ -171,8 +191,8 @@
                                     <div class="service-icon flex-shrink-0">
                                         <i class="bi bi-trophy fa-2x"></i>
                                     </div>
-                                    <h5 class="mb-3">Najbolji Kvalitet po Najboljoj Ceni</h5>
-                                    <p class="m-0">Nudimo kvalitet bez kompromisa, po pristupačnim cenama.</p>
+                                    <h5 class="mb-3" id="NajboljiText">Najbolji Kvalitet po Najboljoj Ceni</h5>
+                                    <p class="m-0" id="KvalitetText">Nudimo kvalitet bez kompromisa, po pristupačnim cenama.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
@@ -180,8 +200,8 @@
                                     <div class="service-icon flex-shrink-0">
                                         <i class="bi bi-lightbulb fa-2x"></i>
                                     </div>
-                                    <h5 class="mb-3">Inovativna Rešenja</h5>
-                                    <p class="m-0">Koristimo najnovije tehnologije da kreiramo moderna i funkcionalna rešenja prilagođena vašim potrebama.</p>
+                                    <h5 class="mb-3" id="RešenjaText">Inovativna Rešenja</h5>
+                                    <p class="m-0" id="KoristimoText">Koristimo najnovije tehnologije da kreiramo moderna i funkcionalna rešenja prilagođena vašim potrebama.</p>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
@@ -189,8 +209,8 @@
                                     <div class="service-icon flex-shrink-0">
                                         <i class="far fa-handshake fa-2x"></i>
                                     </div>
-                                    <h5 class="mb-3">Pouzdan Partner</h5>
-                                    <p class="m-0">Naš tim je tu za vas u svakom koraku, pružajući podršku i osiguravajući dugoročan uspeh.</p>
+                                    <h5 class="mb-3" id="PartnerText">Pouzdan Partner</h5>
+                                    <p class="m-0" id="NašTimText">Naš tim je tu za vas u svakom koraku, pružajući podršku i osiguravajući dugoročan uspeh.</p>
                                 </div>
                             </div>
                         </div>
@@ -205,10 +225,10 @@
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-                        <p class="section-title text-secondary">O Nama<span></span></p>
+                        <p class="section-title text-secondary" id="ONamaText2">O Nama<span></span></p>
                         <!-- <h1 class="mb-5">#1 Digital solution with 10 years of experience</h1> -->
-                         <h1 class="mb-5">#1 Digitalna Rešenja sa 10 Godina Iskustva</h1>
-                        <p class="mb-4">Mi smo tim talentovanih programera sa zajedničkim iskustvom od 10 godina u izradi kvalitetnih digitalnih rešenja. Kreirali smo mnoge uspešne sajtove za zadovoljne klijente i posvećeni smo pružanju vrhunskih usluga. Sa bogatim znanjem iz Softverskog Inženjerstva i Informacionih Sistema, zajedno stvaramo rešenja koja pomeraju granice vašeg digitalnog prisustva.</p>
+                         <h1 class="mb-5" id="DigitalnaText">#1 Digitalna Rešenja sa Godinama Iskustva</h1>
+                        <p class="mb-4" id="MiSmoTimText">Mi smo tim talentovanih programera sa zajedničkim iskustvom od 10 godina u izradi kvalitetnih digitalnih rešenja. Kreirali smo mnoge uspešne sajtove za zadovoljne klijente i posvećeni smo pružanju vrhunskih usluga. Sa bogatim znanjem iz Softverskog Inženjerstva i Informacionih Sistema, zajedno stvaramo rešenja koja pomeraju granice vašeg digitalnog prisustva.</p>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
                                 <p class="mb-2">E-commerce</p>
@@ -220,7 +240,7 @@
                         </div>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">Android i iOS Aplikacije</p>
+                                <p class="mb-2" id="AplikacijeText2">Android i iOS Aplikacije</p>
                                 <p class="mb-2">100%</p>
                             </div>
                             <div class="progress">
@@ -229,7 +249,7 @@
                         </div>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">Dizajn i Razvoj</p>
+                                <p class="mb-2" id="DizajnRazvojText2">Dizajn i Razvoj</p>
                                 <p class="mb-2">100%</p>
                             </div>
                             <div class="progress">
@@ -251,25 +271,25 @@
             <div class="container py-5 px-lg-5">
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3 text-center wow animate__animated animate__fadeIn" data-wow-delay="0.1s">
-                        <i class="fa fa-certificate fa-3x text-white mb-3"></i>
-                        <h1 class="text-white mb-2" data-toggle="counter-up">10</h1>
+                        <i class="fa fa-smile fa-3x text-white mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">100</h1>
                         <!-- <p class="text-white mb-0">Years Experience, Team Members, Satisfied Clients, Compleate Projects</p> -->
-                        <p class="text-white mb-0">Godine Iskustva</p>
+                        <p class="text-white mb-0" id="zadovoljniText">Zadovoljni Klijenti</p>
                     </div>
                     <div class="col-md-6 col-lg-3 text-center wow animate__animated animate__fadeIn" data-wow-delay="0.3s">
-                        <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
-                        <h1 class="text-white mb-2" data-toggle="counter-up">2</h1>
-                        <p class="text-white mb-0">Članovi Tima</p>
+                        <i class="fa fa-headset fa-3x text-white mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">100</h1>
+                        <p class="text-white mb-0" id="dostupnostText">Dostupnost Klijentima</p>
                     </div>
                     <div class="col-md-6 col-lg-3 text-center wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
-                        <i class="fa fa-users fa-3x text-white mb-3"></i>
-                        <h1 class="text-white mb-2" data-toggle="counter-up">15</h1>
-                        <p class="text-white mb-0">Zadovoljni Klijenti</p>
+                        <i class="fa fa-search fa-3x text-white mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">100</h1>
+                        <p class="text-white mb-0" id="usmerenostText">Usmerenost na Detalje</p>
                     </div>
                     <div class="col-md-6 col-lg-3 text-center wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
-                        <i class="fa fa-check fa-3x text-white mb-3"></i>
-                        <h1 class="text-white mb-2" data-toggle="counter-up">15</h1>
-                        <p class="text-white mb-0">Uspešni Projekti</p>
+                        <i class="fa fa-clock fa-3x text-white mb-3"></i>
+                        <h1 class="text-white mb-2" data-toggle="counter-up">100</h1>
+                        <p class="text-white mb-0" id="rokoviText">Poštovanje Rokova</p>
                     </div>
                 </div>
             </div>
@@ -280,8 +300,8 @@
         <div class="container-xxl py-5" id="usluge">
             <div class="container py-5 px-lg-5">
                 <div class="wow animate__animated animate__fadeInUp text-center" data-wow-delay="0.1s">
-                    <p class="section-title text-secondary justify-content-center"><span></span>Naše Usluge<span></span></p>
-                    <h1 class="text-center mb-5">Naša Rešenja za Vas</h1>
+                    <p class="section-title text-secondary justify-content-center" id="NašeUslugeText"><span></span>Naše Usluge<span></span></p>
+                    <h1 class="text-center mb-5" id="RešenjaText2">Naša Rešenja za Vas</h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
@@ -290,7 +310,7 @@
                                 <i class="fa fa-shopping-cart fa-2x"></i>
                             </div>
                             <h5 class="mb-3">E-commerce</h5>
-                            <p class="m-0">Nudimo kompletna rešenja za e-commerce, uključujući dizajn i razvoj kako biste lako prodavali svoje proizvode online.</p>
+                            <p class="m-0" id="NudimoText2">Nudimo kompletna rešenja za e-commerce, uključujući dizajn i razvoj kako biste lako prodavali svoje proizvode online.</p>
                             <!-- <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a> -->
                         </div>
                     </div>
@@ -299,8 +319,8 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-laptop-code fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Web Dizajn</h5>
-                            <p class="m-0">Kreiramo atraktivne i funkcionalne web sajtove koji se prilagođavaju vašim potrebama i odražavaju jedinstvenost vašeg brenda.</p>
+                            <h5 class="mb-3" id="WebDizajnText">Web Dizajn</h5>
+                            <p class="m-0" id="KreiramoText2">Kreiramo atraktivne i funkcionalne web sajtove koji se prilagođavaju vašim potrebama i odražavaju jedinstvenost vašeg brenda.</p>
                             <!-- <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a> -->
                         </div>
                     </div>
@@ -309,8 +329,8 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-mobile-alt fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Android i iOS Aplikacije</h5>
-                            <p class="m-0">Razvijamo moderne i funkcionalne Android i iOS aplikacije koje zadovoljavaju sve potrebe vašeg poslovanja i korisnika.</p>
+                            <h5 class="mb-3" id="AplikacijeText3">Android i iOS Aplikacije</h5>
+                            <p class="m-0" id="RazvijamoText2">Razvijamo moderne i funkcionalne Android i iOS aplikacije koje zadovoljavaju sve potrebe vašeg poslovanja i korisnika.</p>
                             <!-- <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a> -->
                         </div>
                     </div>
@@ -319,8 +339,8 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-palette fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Grafički Dizajn</h5>
-                            <p class="m-0">Profesionalni grafički dizajn koji podiže vaš brend na viši nivo.</p>
+                            <h5 class="mb-3" id="GrafikaText">Grafički Dizajn</h5>
+                            <p class="m-0" id="ProfText">Profesionalni grafički dizajn koji podiže vaš brend na viši nivo.</p>
                             <!-- <p class="m-0">Transformišemo vaše ideje u vizuelne kreacije koje komuniciraju poruku vašeg brenda. Bilo da je u pitanju logo, plakat, ili digitalni sadržaj, naš tim se fokusira na kvalitetan dizajn koji ostavlja dugotrajan utisak.</p> -->
                             <!-- <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a> -->
                         </div>
@@ -330,8 +350,8 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-print fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Dizajniranje Akcideničnih Proizvoda</h5>
-                            <p class="m-0">Učinite svaki promotivni materijal nezaboravnim uz naš dizajn.</p>
+                            <h5 class="mb-3" id="AkcideničniPText">Dizajniranje Akcideničnih Proizvoda</h5>
+                            <p class="m-0" id="UčiniteText">Učinite svaki promotivni materijal nezaboravnim uz naš dizajn.</p>
                             <!-- <p class="m-0">Specijalizovani smo za dizajn promotivnih materijala poput brošura, vizit kartica, i letaka koji privlače pažnju i ostavljaju profesionalan utisak.</p> -->
                             <!-- <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a> -->
                         </div>
@@ -341,8 +361,8 @@
                             <div class="service-icon flex-shrink-0">
                                 <i class="fa fa-share-alt fa-2x"></i>
                             </div>
-                            <h5 class="mb-3">Marketing na Društvenim Mrežama</h5>
-                            <p class="m-0">Kreativne strategije za uspeh na svim društvenim platformama.</p>
+                            <h5 class="mb-3" id="MarketingText">Marketing na Društvenim Mrežama</h5>
+                            <p class="m-0" id="StrategijeText">Kreativne strategije za uspeh na svim društvenim platformama.</p>
                         </div>
                     </div>
                 </div>
@@ -355,8 +375,8 @@
             <div class="container py-5 px-lg-5">
                 <div class="row justify-content-center">
                     <div class="col-lg-7 text-center">
-                        <p class="section-title text-white justify-content-center"><span></span>Uspeh<span></span></p>
-                        <h1 class="text-center text-white mb-4">Neke od Naših Stručnih Oblasti</h1>
+                        <p class="section-title text-white justify-content-center" id="UspehText"><span></span>Uspeh<span></span></p>
+                        <h1 class="text-center text-white mb-4" id="OblastiText">Neke od Naših Stručnih Oblasti</h1>
                          <!-- Infinite Carousel Tehnologija koje Koristimo -->
                         <div id="techCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                             <div class="carousel-inner">
@@ -366,24 +386,12 @@
                                 <div class="carousel-item">
                                     <img src="assets/img/CSS3.png" class="d-block mx-auto" style="height: 80px;">
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img src="img/Tailwind CSS.png" class="d-block mx-auto" style="height: 80px;">
-                                </div> -->
                                 <div class="carousel-item">
                                     <img src="assets/img/JavaScript.png" class="d-block mx-auto" alt="JavaScript" style="height: 80px;">
                                 </div>
                                 <div class="carousel-item">
                                     <img src="assets/img/Bootstrap (1) (1).png" class="d-block mx-auto" style="height: 80px;">
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img src="img/jquery.png" class="d-block mx-auto" alt="JavaScript" style="height: 80px;">
-                                </div> -->
-                                <!-- <div class="carousel-item">
-                                    <img src="img/Node.js.png" class="d-block mx-auto" alt="Node.js" style="height: 80px;">
-                                </div> -->
-                                <!-- <div class="carousel-item">
-                                    <img src="img/Express.png" class="d-block mx-auto" style="height: 80px;">
-                                </div> -->
                                 <div class="carousel-item">
                                     <img src="assets/img/React.png" class="d-block mx-auto" alt="React.js" style="height: 80px;">
                                 </div>
@@ -393,27 +401,12 @@
                                 <div class="carousel-item">
                                     <img src="assets/img/Python.png" class="d-block mx-auto" style="height: 80px;">
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img src="img/Flask.png" class="d-block mx-auto" style="height: 80px;">
-                                </div> -->
-                                <!-- <div class="carousel-item">
-                                    <img src="img/Jinja.png" class="d-block mx-auto" style="height: 80px;">
-                                </div> -->
-                                <!-- <div class="carousel-item">
-                                    <img src="img/MySQL.png" class="d-block mx-auto" style="height: 80px;">
-                                </div> -->
                                 <div class="carousel-item">
                                     <img src="assets/img/Firebase.png" class="d-block mx-auto" style="height: 80px;">
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img src="img/Java.png" class="d-block mx-auto" style="height: 80px;">
-                                </div> -->
                                 <div class="carousel-item">
                                     <img src="assets/img/CSharp.png" class="d-block mx-auto" style="height: 80px;">
                                 </div>
-                                <!-- <div class="carousel-item">
-                                    <img src="img/githubLogo.png" class="d-block mx-auto" alt="GitHub" style="height: 80px;">
-                                </div> -->
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#techCarousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -430,49 +423,13 @@
         </div>
         <!-- Tehnike End -->
 
-        <!-- Services-->
-        <!-- <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center wow animate__animated animate__fadeInUp">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row text-center wow animate__animated animate__fadeInUp">
-                    <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
         <!-- Projects Start -->
         <div class="container-xxl py-5" id="projekti">
             <div class="container py-5 px-lg-5">
                 <div class="wow animate__animated animate__fadeInUp text-center" data-wow-delay="0.1s">
                     <!-- <h1 class="text-center mb-5">Recently Completed Projects, Our Projects</h1> -->
-                    <p class="section-title text-secondary justify-content-center section-subheading text-muted"><span></span>Naši Projekti<span></span></p>
-                    <h1 class="text-center mb-5">Nedavno Završeni Projekti</h1>
+                    <p class="section-title text-secondary justify-content-center section-subheading text-muted" id="NašiProjektiText"><span></span>Naši Projekti<span></span></p>
+                    <h1 class="text-center mb-5" id="NedavnoZavršeniText">Nedavno Završeni Projekti</h1>
                 </div>
                 <div class="row mt-n2 wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
                     <div class="col-12 text-center">
@@ -630,12 +587,12 @@
         <!-- Testimonial Start -->
         <div class="container-xxl py-5 wow animate__animated animate__fadeInUp" id="recenzijeSekcija" data-wow-delay="0.1s">
             <div class="container py-5 px-lg-5">
-                <p class="section-title text-secondary justify-content-center text-center"><span></span>Recenzije<span></span></p>
+                <p class="section-title text-secondary justify-content-center text-center" id="RecenzijeText"><span></span>Recenzije<span></span></p>
                 <!-- Testimonial, What Say Our Clients -->
-                <h1 class="text-center mb-5">Šta Naši Klijenti Kažu</h1>
+                <h1 class="text-center mb-5" id="KlijentiKažuText">Šta Naši Klijenti Kažu</h1>
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Ovo je sjajno! Bolje nismo mogli ni da zamislimo! Mislim da imamo ubedljivo najbolji vebsajt za apartmane u gradu! Previše sam zahvalan Iliji i njegovoj profesionalnosti. Hvala mu.</p>
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i><span class="recenzija-text" id="recenzijaText1">Ovo je sjajno! Bolje nismo mogli ni da zamislimo! Mislim da imamo ubedljivo najbolji vebsajt za apartmane u gradu! Previše sam zahvalan Iliji i njegovoj profesionalnosti. Hvala mu.</span></p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/Yellow and Black Gamer Grunge Youtube Channel Logo.jpg" style="width: 65px; height: 65px;">
                             <div class="ps-4">
@@ -652,7 +609,7 @@
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Profesionalni, predani i inovativni. Naš novi vebsajt je bolji nego što smo ikada mogli da zamislimo. Hvala na svemu!</p>
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i><span class="recenzija-text" id="recenzijaText2">Profesionalni, predani i inovativni. Naš novi vebsajt je bolji nego što smo ikada mogli da zamislimo. Hvala na svemu!</span></p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/Yellow and Black Gamer Grunge Youtube Channel Logo.jpg" style="width: 65px; height: 65px;">
                             <div class="ps-4">
@@ -669,7 +626,7 @@
                         </div>
                     </div>
                     <div class="testimonial-item bg-light rounded my-4">
-                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Napravili su mi fantastičan veb sajt! Moderan, funkcionalan i privlačan dizajn. Profesionalnost i kreativnost na najvišem nivou. Toplo preporučujem!</p>
+                        <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i><span class="recenzija-text" id="recenzijaText3">Napravili su mi fantastičan veb sajt! Moderan, funkcionalan i privlačan dizajn. Profesionalnost i kreativnost na najvišem nivou. Toplo preporučujem!</span></p>
                         <div class="d-flex align-items-center">
                             <img class="img-fluid flex-shrink-0 rounded-circle" src="assets/img/Yellow and Black Gamer Grunge Youtube Channel Logo.jpg" style="width: 65px; height: 65px;">
                             <div class="ps-4">
@@ -695,29 +652,29 @@
         <section class="page-section bg-light" id="team">
             <div class="container">
                 <div class="text-center wow animate__animated animate__fadeInUp">
-                    <p class="section-title text-secondary justify-content-center text-center"><span></span>Naš Tim<span></span></p>
+                    <p class="section-title text-secondary justify-content-center text-center" id="NašTimText1"><span></span>Naš Tim<span></span></p>
                     <!-- Testimonial, What Say Our Clients -->
-                    <h1 class="text-center mb-5">Naši Članovi Tima</h1>
+                    <h1 class="text-center mb-5" id="ČlanoviText1">Naši Članovi Tima</h1>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-4">
                         <div class="team-member wow animate__animated animate__zoomIn" data-wow-delay="0.1s">
                             <img class="mx-auto rounded-circle team-img" src="assets/img/team/ilijinaProfilna3.JPG" alt="..." />
                             <h4>Ilija P</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <p class="text-muted">Web & Software Developer</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/webips.digital/?igsh=eHlyNzBxZHBmeDF2" target="_blank" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/zaacczXwX2utBwp8/?mibextid=qi2Omg" target="_blank" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/ilija-popadic-27a4a72b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="team-member wow animate__animated animate__zoomIn" data-wow-delay="0.5s">
                             <img class="mx-auto rounded-circle team-img" src="assets/img/team/andjelaProfilna4.JPG" alt="..." />
                             <h4>Andjela P</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                            <p class="text-muted">Graphic Designer & IT Specialist</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/webips.digital/?igsh=eHlyNzBxZHBmeDF2" target="_blank" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/zaacczXwX2utBwp8/?mibextid=qi2Omg" target="_blank" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/ilija-popadic-27a4a72b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -749,8 +706,8 @@
         <section class="page-section" id="contact">
             <div class="container wow animate__animated animate__fadeInUp">
                 <div class="text-center wow animate__animated animate__fadeInUp">
-                    <h2 class="section-heading text-uppercase">Digitalizujte se Danas!</h2>
-                    <h3 class="section-subheading text-muted">Spremni smo da vaš biznis podignemo na viši nivo. Kontaktirajte nas putem jednog od sledećih kanala:</h3>
+                    <h2 class="section-heading text-uppercase" id="DigizalitujteseText">Digitalizujte se Danas!</h2>
+                    <h3 class="section-subheading text-muted" id="SpremniText">Spremni smo da vaš biznis podignemo na viši nivo. Kontaktirajte nas putem jednog od sledećih kanala:</h3>
                     <div class="row wow animate__animated animate__fadeInUp">
                         <div class="col-md-6 mb-3">
                             <a href="tel:+381653910310" class="btn btn-outline-primary w-100 rounded-pill px-4 py-2">
@@ -763,12 +720,12 @@
                             </a>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <a href="https://www.instagram.com/yourprofile" class="btn btn-outline-primary w-100 rounded-pill px-4 py-2">
+                            <a href="https://www.instagram.com/webips.digital/?igsh=eHlyNzBxZHBmeDF2" class="btn btn-outline-primary w-100 rounded-pill px-4 py-2">
                                 <i class="fab fa-instagram"></i> Instagram
                             </a>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <a href="https://www.facebook.com/yourprofile" class="btn btn-outline-primary w-100 rounded-pill px-4 py-2">
+                            <a href="https://www.facebook.com/share/zaacczXwX2utBwp8/?mibextid=qi2Omg" class="btn btn-outline-primary w-100 rounded-pill px-4 py-2">
                                 <i class="fab fa-facebook-f"></i> Facebook
                             </a>
                         </div>
@@ -782,9 +739,9 @@
                 <div class="row align-items-center">
                     <div class="col-lg-4 text-lg-start">Copyright &copy; Webips 2024</div>
                     <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/webips.digital/?igsh=eHlyNzBxZHBmeDF2" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/share/zaacczXwX2utBwp8/?mibextid=qi2Omg" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/ilija-popadic-27a4a72b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                     <div class="col-lg-4 text-lg-end">
                         <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
@@ -809,7 +766,7 @@
                     <small>Just now</small>
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                 </div>
-                <div class="toast-body">
+                <div class="toast-body" id="popUpOInfoText">
                     Kontaktirajte Nas za Više Informacija!
                 </div>
             </div>
